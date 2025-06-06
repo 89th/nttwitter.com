@@ -13,7 +13,9 @@ export default {
     } else {
       // Redirect other requests to nitter.net, preserving the URL
       const nitterURL = new URL(request.url);
-      nitterURL.hostname = 'nitter.net';
+      //nitterURL.hostname = 'nitter.net';
+      //nitterURL.hostname = 'nitter.adminforge.de';
+      nitterURL.hostname = 'xcancel.com';
       return new Response(null, {
         status: 302,
         headers: {
